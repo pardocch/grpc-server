@@ -1,6 +1,6 @@
 module github.com/pardocch/grpc-server
 
-go 1.23.1
+go 1.23
 
 require (
 	golang.org/x/net v0.28.0 // indirect
