@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package helloworld;
+
+// Specify the Go package for the generated code, typically module name + file path
+option go_package = "./proto";
+
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string message = 1;
+}
+
